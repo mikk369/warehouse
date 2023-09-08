@@ -6,6 +6,6 @@
 2. Open PHPMyAdmin by visiting http://localhost/phpmyadmin in your browser.
 3. Import database [warehouse.sql] from databaseDump folder.
 
-4. Clone this repository to your local machine:
 
-   git clone https://github.com/mikk369/warehouse.git
+
+ git clone https://github.com/mikk369/warehouse.git
