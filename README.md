@@ -46,3 +46,22 @@
   It includes logic to sort the products based on the provided sorting.
 
 - [update_products.php]: This script handles PATCH requests to update product details in the database.
+
+## Filtering and Sorting Functionality:
+
+- [Filtering]:
+  The filtering functionality is achieved through the dropdown menu in the Getproducts component.
+
+- [Sorting-on-the-Server-Side]:
+  To handle sorting on the server side, the PHP get_products.php script is modified to accept a sortBy query parameter.
+
+## Challenges Faced:
+
+Backend [update_products.php]:
+Cross-Origin Resource Sharing (CORS): Updating products needs to return "if ($\_SERVER['REQUEST_METHOD'] === 'OPTIONS') {  
+ return 0; }" otherwise gives cors error.
+
+Frontend [EditProducts.js]:
+I used `find` method to retrieve specific product data based on the product's ID. Because when
+retrieving ID from URL it gives error of "A component is changing a controlled input to be uncontrolled.", when you try to
+update the value of a controlled input field (an input field with a defined `value` prop) with `undefined` or `null` data.
