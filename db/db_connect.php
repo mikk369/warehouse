@@ -1,6 +1,6 @@
 <?php
 include "db_config.php";
-$connection = mysqli_connect($host . ":" . $port, $userName, $password, $database);
+$connection = mysqli_connect($host, $userName, $password, $database);
 
 // if ($connection) {
 //     echo "Connected to database";

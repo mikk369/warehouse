@@ -19,7 +19,7 @@ function EditProduct() {
   //Fetch the product data when the component mounts or when 'id' changes
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/api/get_products.php`)
+      .get(`https://wareback.webcodes.ee/api/get_products.php`)
       .then((response) => {
         const allProducts = response.data;
 

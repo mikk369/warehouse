@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Getproducts() {
   // Define a variable to hold the API URL
-  let apiUrl = 'http://localhost:8000/api/get_products.php';
+  let apiUrl = 'https://wareback.webcodes.ee/api/get_products.php';
   const [products, setProducts] = useState([]);
 
   // State to manage sorting options

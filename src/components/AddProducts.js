@@ -42,7 +42,7 @@ function Addproducts() {
 
     try {
       // Send a POST request to add a new product with form data
-      await axios.post('http://localhost:8000/api/add_products.php', formData);
+      await axios.post('https://wareback.webcodes.ee/api/add_products.php', formData);
       navigate('/');
     } catch (error) {
       console.error(error);
